@@ -1,0 +1,33 @@
+<!-- 
+
+    <h1>QUOTES</h1>
+    <hr>
+    <div class="row">
+        <div id="rain">
+            <p id="ni">When it rains look for <br>
+                rainbows.<br>
+                 When it’s dark look for 
+                 <br>stars</p>
+            <p id="bra">Create your quote bellow!!!!</p>
+        </div>
+        <div class="col-md-6">
+            <div id="mo">
+            <div *ngFor='let quote of quotes;let i = index'>
+                    
+                <div>
+                    <h4 id={{i}} appVotes>{{ quote.author }} "created on:{{quote.postedDate|date}}"</h4>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Show description</button>
+                </div>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-descr [quote]='quote' (isReaded)='deleteQuote($event,i)'></app-quote-descr>
+                </div>
+                <app-like></app-like>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="mi">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+    </div>
+</div> -->
