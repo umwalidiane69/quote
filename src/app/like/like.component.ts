@@ -11,13 +11,13 @@ export class LikeComponent implements OnInit {
   upVotes(){
     this.likes=this.likes+1;
   }
-//   dislikes=0
-//   downVotes(){
-//     this.dislikes=this.dislikes+1;
-//   }
-//   constructor() { }
+  dislikes=0
+  downVotes(){
+    this.dislikes=this.dislikes+1;
+  }
+  constructor() { }
 
-//   ngOnInit() {
-//   }
+  ngOnInit() {
+  }
 
-// }
+}
