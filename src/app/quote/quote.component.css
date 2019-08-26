@@ -5,7 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 50px;
-     
+    margin-left: 15px;
+    margin-right: 15px; 
 }
 #ni{
     text-align: center;
@@ -14,11 +15,12 @@
     font-family:  Calibri;
 }
 #mi{
-    background-color: rgb(197, 216, 243);
+    background-image: url(https://data.whicdn.com/images/303265725/original.gif);
     height: 840px;
+    color: white;
 }
  #mo{
-    background-color: rgb(197, 216, 243);
+    background-image:url(https://i.pinimg.com/originals/72/f3/b1/72f3b1536ff514e78ec63bdc6df23f68.gif);;
 
 }
 #bra{
@@ -35,3 +37,7 @@ h1{
     color: rgb(10, 37, 10);
     text-decoration: underline;
 } 
+h4,#des{
+    color: wheat;
+    font-family: Lucida Sans Unicode;
+}

@@ -18,7 +18,7 @@
                     <h4 id={{i}} appVotes>{{ quote.author }} "created on:{{quote.postedDate|date}}"</h4>
                     <button (click)='toggleDetails(i)' class="btn btn-primary">Show description</button>
                 </div>
-                <div *ngIf='quote.showDescription'>
+                <div *ngIf='quote.showDescription' id="des">
                     <app-quote-descr [quote]='quote' (isReaded)='deleteQuote($event,i)'></app-quote-descr>
                 </div>
                 <app-like></app-like>
