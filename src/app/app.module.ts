@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDescrComponent } from './quote-descr/quote-descr.component';
 import { VotesDirective } from './votes.directive';
-import { DateCountPipe } from './date-count.pipe';
+ import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { LikeComponent } from './like/like.component';
 
@@ -17,7 +17,7 @@ import { LikeComponent } from './like/like.component';
     QuoteComponent,
     QuoteDescrComponent,
     VotesDirective,
-    DateCountPipe,
+   DateCountPipe,
     QuoteFormComponent,
     LikeComponent
   ],
