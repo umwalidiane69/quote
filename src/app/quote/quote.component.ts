@@ -17,28 +17,28 @@ export class QuoteComponent implements OnInit {
  new Quote(6,'If you are not too long, I will wait here for you all my life.','Never get tired of waiting for you because our life is not too long',new Date(2019,7,23)),
  new Quote(7,'Life is like the ocean, it goes up and down.','this life has both times,time for happiness and time for sadness',new Date(2019,7,23))
    ];
-//    toggleDetails(index){
+   toggleDetails(index){
     
-//     this.quotes[index].showDescription = !this.quotes[index].showDescription;
-//   }
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
-// addNewQuote(quote){
-//   let quoteLength = this.quotes.length;
-//   quote.id = quoteLength+1;
-//   quote.postedDate = new Date(quote.postedDate)
-//   this.quotes.push(quote)
-// }
+addNewQuote(quote){
+  let quoteLength = this.quotes.length;
+  quote.id = quoteLength+1;
+  quote.postedDate = new Date(quote.postedDate)
+  this.quotes.push(quote)
+}
 
-//   deleteQuote(isReaded, index){
-//     if (isReaded) {
-//       let toDelete = confirm(`Are you sure you want to delete this quote?`)
-//       if(toDelete){
-//       this.quotes.splice(index,1)}
-//     }
-//   }
-//   constructor() { }
+  deleteQuote(isReaded, index){
+    if (isReaded) {
+      let toDelete = confirm(`Are you sure you want to delete this quote?`)
+      if(toDelete){
+      this.quotes.splice(index,1)}
+    }
+  }
+  constructor() { }
 
-//   ngOnInit() {
-//   }
+  ngOnInit() {
+  }
 
-// }
+}
