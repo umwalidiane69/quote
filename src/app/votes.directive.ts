@@ -1,13 +1,13 @@
-// import { Directive,ElementRef,HostListener } from '@angular/core';
+import { Directive,ElementRef,HostListener } from '@angular/core';
 
-// @Directive({
-//   selector: '[appVotes]'
-// })
-// export class VotesDirective {
-//   constructor(private elem:ElementRef){}
-//   @HostListener("click") onClicks(){
-//     this.textDeco("green")
-//   }
+@Directive({
+  selector: '[appVotes]'
+})
+export class VotesDirective {
+  constructor(private elem:ElementRef){}
+  @HostListener("click") onClicks(){
+    this.textDeco("green")
+  }
 //   @HostListener("dblclick") onDoubleClicks(){
 //     this.textDeco("None")
 //   }
